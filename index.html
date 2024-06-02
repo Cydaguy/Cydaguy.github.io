@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+<style>
+body {
+    font-family: 'Aclonica';font-size: 20px;
+}
+</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Prompt</title>
+</head>
+<h1>Karl's Birthday Gift</h1>
+<p>Please enter password:</p>
+<style>
+body {
+  background-color: mediumseagreen;
+}
+</style>
+<body>
+    <input type="password" id="password" placeholder="Enter password">
+    <button onclick="checkPassword()">Enter</button>
+
+    <script>
+        function checkPassword() {
+            var passwordInput = document.getElementById("password");
+            var password = passwordInput.value;
+
+            if (password === "Cyrusisthebest") {
+                alert("We are going to VidCon!");
+            } else {
+                alert("Incorrect password. Please try again.");
+                // Clear the input field
+                passwordInput.value = "";
+            }
+        }
+    </script>
+</body>
+</html>
